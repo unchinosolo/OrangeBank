@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1E24"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="460dp"
+        android:layout_height="430dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="326dp"
+        android:layout_height="466dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/forma1" />
+
+    <EditText
+        android:id="@+id/tv_usuario"
+        android:layout_width="278dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#E8E2DE"
+        android:hint="usuario"
+        android:inputType="textPersonName"
+        android:textColor="#CAD593"
+        android:textColorHint="#CAD593"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <EditText
+        android:id="@+id/tv_password"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColor="#C5D08F"
+        android:textColorHint="#CAD593"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_registrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usuario"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_ingresar"
+        android:layout_width="79dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:background="#0E1524"
+        android:text="ingresar"
+        android:textColor="#E6DDDD"
+        app:layout_constraintBottom_toTopOf="@+id/tv_registrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/tv_registrarse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿no tenés cuenta? Registrate."
+        android:textAlignment="center"
+        android:textColor="#CAD593"
+        android:textColorHint="#CAD593"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="202dp"
+        android:layout_height="61dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="#DC6C15"
+        android:text="Bienvenido"
+        android:textColor="#0E1524"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.885" />
+
+    <TextView
+        android:id="@+id/tv_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orange Bank"
+        android:textAlignment="center"
+        android:textColor="#FE8C2E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_registrarse"
+        app:layout_constraintVertical_bias="0.827" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

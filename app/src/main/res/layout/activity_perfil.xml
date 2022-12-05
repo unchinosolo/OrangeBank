@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backperfil"
+    tools:context=".ui.PerfilActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="377dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_saldo2"
+        app:srcCompat="@drawable/undraw_digital_currency_qpak" />
+
+    <TextView
+        android:id="@+id/tv_bienvenida1"
+        android:layout_width="287dp"
+        android:layout_height="53dp"
+        android:autoSizeTextType="uniform"
+        android:text="Bienvenido."
+        android:textColor="#FDFDCF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_saldo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <TextView
+        android:id="@+id/tv_saldo"
+        android:layout_width="179dp"
+        android:layout_height="40dp"
+        android:autoSizeTextType="uniform"
+        android:paddingEnd="20dp"
+        android:text="$0.0"
+        android:textAlignment="viewEnd"
+        android:textColor="#FEFED0"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <TextView
+        android:id="@+id/tv_BienvenidaDos"
+        android:layout_width="72dp"
+        android:layout_height="26dp"
+        android:autoSizeTextType="uniform"
+        android:ellipsize="middle"
+        android:text="BTC"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFF59D"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <TextView
+        android:id="@+id/tv_saldo2"
+        android:layout_width="279dp"
+        android:layout_height="39dp"
+        android:autoSizeTextType="uniform"
+        android:paddingEnd="20dp"
+        android:text="$0.0"
+        android:textAlignment="viewEnd"
+        android:textColor="#FEFED0"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_comprar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bx_bitcoin"
+            android:backgroundTint="#F4511E"
+            android:textColor="#F4511E" />
+
+        <Button
+            android:id="@+id/btn_depositar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bx_money_withdraw"
+            android:backgroundTint="#F4511E"
+            android:textColor="#F4511E" />
+
+        <Button
+            android:id="@+id/btn_cuenta"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/apps_48px"
+            android:backgroundTint="#F4511E"
+            android:textColor="#F4511E" />
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home_48px"
+            android:backgroundTint="#F4511E"
+            android:textColor="#F4511E" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/tv_Bienvenida"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:autoSizeTextType="uniform"
+        android:ellipsize="middle"
+        android:text="ARS"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFF59D"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
